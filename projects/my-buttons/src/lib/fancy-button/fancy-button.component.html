@@ -13,8 +13,8 @@
             </span>
             <span *ngIf="this.all_selected_values.length === 0">{{selectPlaceHolder}}</span>
         </div>
-        <mat-icon matSuffix class="{{filterPopUpWidthClass==='dropdown'?'iconPosition':'iconPositionPopUp'}}"
-            (click)="$event.stopPropagation();showHideDropDown();">expand_more</mat-icon>
+        <!-- <mat-icon matSuffix class="{{filterPopUpWidthClass==='dropdown'?'iconPosition':'iconPositionPopUp'}}"
+            (click)="$event.stopPropagation();showHideDropDown();">expand_more</mat-icon> -->
         <div *ngIf="showDropdown" [style]="{ 'top': topValue }" class="{{filterPopUpWidthClass}}"
             (click)="$event.stopPropagation()">
             <form [formGroup]="filterForm" novalidate class="dialog-with-autocomplete default-form">
