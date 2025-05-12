@@ -9,16 +9,16 @@ import { MyButtonsComponent } from './my-buttons.component';
 @NgModule({
   declarations: [MyButtonsComponent, FancyButtonComponent],
   imports: [
-    // CommonModule,
-    // MatInputModule,
-    // MatIconModule, // Import CommonModule here],
-    // MatProgressSpinnerModule,
+    CommonModule,
+    MatInputModule,
+    MatIconModule, // Import CommonModule here],
+    MatProgressSpinnerModule,
   ],
   exports: [
-    // MyButtonsComponent,
-    // FancyButtonComponent,
-    // MatInputModule,
-    // MatProgressSpinnerModule,
+    MyButtonsComponent,
+    FancyButtonComponent,
+    MatInputModule,
+    MatProgressSpinnerModule,
   ],
 })
 export class MyButtonsModule {}
