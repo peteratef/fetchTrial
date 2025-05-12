@@ -1,7 +1,6 @@
 {
   "name": "my-shared-workspace",
   "version": "0.0.2",
-  "publishConfig": {"registry": "https://npm.pkg.github.com"},
   "repository": { "type": "git", 
   "url": "https://github.com/peteratef/fetchTrial.git" 
   },
