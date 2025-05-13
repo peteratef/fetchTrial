@@ -14,16 +14,14 @@ import { FormBuilder } from '@angular/forms';
 })
 export class FancyButtonComponent {
   // selected value in edit or when check or click
-  @Input() noDataFoundclass: any; // the selected value in case of edit, -->
+  @Input() noDataFoundclass!: any; // the selected value in case of edit, -->
   @Input() filterPopUpWidthClass: string = 'dropdown'; // this is the default width of the search secton and scroll
   // options send it with 'dropdownSmallWidth' for smaller width
-  @Input() all_selected_values: Array<{ [key: string]: any }> = new Array<{
-    [key: string]: any;
-  }>();
+  @Input() all_selected_values!: Array<{ [key: string]: any }> ;
   // above is the whole values that will appear
-  @Input() data: Array<any> = new Array<{ [key: string]: any }>(); /// the data that will appear in the listing
+  @Input() data!: Array<any>; /// the data that will appear in the listing
   @Input() topValue!: string; // the position of the field
-  @Input() allSelectedIds: any; // the selected value in case of edit, -->
+  @Input() allSelectedIds!: any; // the selected value in case of edit, -->
   // also in multiple when chosing a value and reset the search
   // --> or the selected when click, as object, as can be single of multipe
   @Input() isDataLoading: boolean = false; // the spinner for the loading data
@@ -35,7 +33,7 @@ export class FancyButtonComponent {
   @Input() secondData!: string; // the second data in each row
   @Input() disableConditionField!: string; // in case you want to disable the field depending on a certain record
   // or as below if you have array of inputs
-  @Input() allDisabledIds: number[] = []; // in case of multiple if i want to disable certain ids
+  @Input() allDisabledIds!: number[]; // in case of multiple if i want to disable certain ids
   // or another way to make it disable is to add the third paramenter
   // like first name and last name to add the disableField
   @Input() checkBoxParmeter!: string; // to show if it is single of mutliple, if single don't send it in the html,
