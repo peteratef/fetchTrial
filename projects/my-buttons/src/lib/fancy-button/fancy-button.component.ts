@@ -6,6 +6,7 @@ import {
   Output,
 } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { ActionHandler } from '../shared/action-handler.interface';
 
 @Component({
   selector: 'lib-fancy-button',
@@ -40,6 +41,8 @@ export class FancyButtonComponent {
   // like first name and last name to add the disableField
   @Input() checkBoxParmeter!: string; // to show if it is single of mutliple, if single don't send it in the html,
   // --> if multiple send the columid for example
+
+  @Input () actionHandler:ActionHandler;
   @Input() className!: string; // the color and the BG of the input with Arrow field eigher normal(white) or grey
   @Input() error!: any; // if there is an error in the field
   @Output() onChange = new EventEmitter<any>();
@@ -49,7 +52,16 @@ export class FancyButtonComponent {
   @Output() onTouch = new EventEmitter<any>();
 
   constructor(private fb: FormBuilder) {}
-
+triggerAction()
+{
+  if(this.actionHandler)
+  {
+    this.actionHandler.handelAction({message:'actiion trigggered from library'})
+  }
+  else{
+    console.log('action handler not provided')
+  }
+}
   @HostListener('document:click', ['$event']) onDocumentClick(event: any) {
     this.showDropdown = false;
     this.filterForm.reset();
