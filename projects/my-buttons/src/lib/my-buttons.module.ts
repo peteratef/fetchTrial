@@ -4,12 +4,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FancyButtonComponent } from './fancy-button/fancy-button.component';
-// import { MyButtonsComponent } from './my-buttons.component';
+import { MyButtonsComponent } from './my-buttons.component';
 
 @NgModule({
-  declarations: [
-    // MyButtonsComponent, 
-    FancyButtonComponent],
+  declarations: [MyButtonsComponent, FancyButtonComponent],
   imports: [
     CommonModule,
     MatInputModule,
@@ -17,7 +15,7 @@ import { FancyButtonComponent } from './fancy-button/fancy-button.component';
     MatProgressSpinnerModule,
   ],
   exports: [
-    // MyButtonsComponent,
+    MyButtonsComponent,
     FancyButtonComponent,
     MatInputModule,
     MatProgressSpinnerModule,
