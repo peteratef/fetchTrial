@@ -17,9 +17,8 @@ import { MyButtonsComponent } from './my-buttons.component';
     MatIconModule, // Import CommonModule here],
     MatProgressSpinnerModule,
     FormsModule,
-    ReactiveFormsModule
-    ,MatPseudoCheckboxModule,
-  MatCheckboxModule ],
+    ReactiveFormsModule,
+    MatCheckboxModule ],
   exports: [
     MyButtonsComponent,
     FancyButtonComponent,

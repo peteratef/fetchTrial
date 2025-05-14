@@ -1,6 +1,6 @@
 {
   "name": "my-shared-workspace",
-  "version": "0.0.27",
+  "version": "0.0.29",
   "repository": { "type": "git", 
   "url": "https://github.com/peteratef/fetchTrial.git" 
   },
