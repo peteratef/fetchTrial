@@ -11,10 +11,13 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "my-buttons": [
-        "dist/my-buttons/my-buttons",
-        "dist/my-buttons"
-      ]
+     "@my-shared-workspace/*": [
+       "dist/my-buttons"
+      ],
+      // "my-buttons": [
+      //   "dist/my-buttons/my-buttons",
+      //   "dist/my-buttons"
+      // ]
     },
     "target": "es2015",
     "module": "es2020",
